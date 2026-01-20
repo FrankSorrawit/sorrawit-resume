@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorrawit Treesuk (Frank) - AI Resume</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <script type="module" src="js/main.js" defer></script>
+    <script type="module" src="js/chatbot.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Frank.AI</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+        <div class="hero-content">
+            <div class="profile-img-container">
+                <div class="profile-img-placeholder"></div> 
+                <!-- <img src="images/profile.jpg" alt="Sorrawit Treesuk" class="profile-img"> -->
+            </div>
+            <h1 class="name">Sorrawit Treesuk <span class="highlight">(Frank)</span></h1>
+            <h2 class="title">AI Developer & Data Scientist</h2>
+            <p class="tagline">Building the future with AI, one token at a time.</p>
+            <div class="cta-buttons">
+                <a href="cv.pdf" class="btn btn-primary">Download CV</a>
+                <button id="hero-chat-btn" class="btn btn-secondary">Chat with AI</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p id="about-story">Loading...</p>
+                    <h3>Key Strengths</h3>
+                    <ul id="about-strengths" class="strengths-list"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline" id="experience-timeline">
+                <!-- JS will populate this -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid" id="projects-grid">
+                <!-- JS will populate this -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Section -->
+    <section id="teaching" class="section">
+        <div class="container">
+            <h2 class="section-title">Teaching & Seminars</h2>
+            <ul id="teaching-list" class="teaching-list"></ul>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills Matrix</h2>
+            <div class="skills-grid" id="skills-grid">
+                <!-- JS will populate this -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section id="journey" class="section">
+        <div class="container">
+            <h2 class="section-title">My Journey</h2>
+            <div class="journey-grid" id="journey-grid">
+                <!-- JS will populate this -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-links" id="contact-links">
+                <!-- JS will populate this -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sorrawit Treesuk. Powered by AI.</p>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div id="chatbot-widget" class="chatbot-widget collapsed">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <span class="status-dot"></span> Frank-AI
+            </div>
+            <button id="chatbot-toggle" class="chatbot-toggle-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+            </button>
+        </div>
+        <div class="chatbot-body">
+            <div id="chat-messages" class="chat-messages">
+                <div class="message bot">
+                    Hello! I'm Frank's AI assistant. Ask me anything about his work, skills, or experience!
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Ask a question..." autocomplete="off">
+                <button id="chat-send">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
