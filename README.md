@@ -1,73 +1,70 @@
-# React + TypeScript + Vite
+# 🚀 Sorrawit.AI - Interactive Resume Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, presentation-style resume website with an AI-powered chatbot that answers questions about my experience and projects.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?logo=typescript)
+![FastAPI](https://img.shields.io/badge/FastAPI-Python-009688?logo=fastapi)
+![Gemini](https://img.shields.io/badge/Gemini_2.5-Google-4285F4?logo=google)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **🎯 Presentation Layout** - Scroll-based sections optimized for interview presentations
+- **📊 Impact Stats** - Visual cards showing key achievements (3+ years, 10 chatbots, 100M+ THB)
+- **🎠 Project Carousel** - Horizontal navigation through featured projects
+- **🤖 AI Chatbot** - Ask me anything about my experience (powered by Gemini 2.5 Flash)
+- **🌙 Dark Mode** - Premium dark theme with gradient accents
+- **📱 Responsive** - Works on desktop and mobile
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+| Frontend | Backend |
+|----------|---------|
+| React 19 + Vite | FastAPI |
+| TypeScript | Google Gemini AI |
+| Framer Motion | Python |
+| Lucide Icons | uvicorn |
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Quick Start
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Frontend
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Backend (Chatbot)
+```bash
+cd backend
+pip install -r requirements.txt
+# Set GEMINI_API_KEY in .env
+python main.py
 ```
+
+## 📁 Project Structure
+
+```
+├── src/
+│   ├── components/    # React components
+│   ├── data.ts        # Resume data
+│   └── index.css      # Styles
+├── backend/
+│   ├── main.py        # FastAPI server
+│   └── resume.md      # Chatbot context
+└── public/            # Static assets
+```
+
+## 👨‍💻 About Me
+
+**Sorrawit Treesuk (Frank)** - AI Developer | GenAI Solution Architect
+
+Building production-grade Chatbot and GenAI/LLM solutions at enterprise scale.
+From On-field Engineer to AI Engineer.
+
+📧 sorrawit.tre@gmail.com  
+🔗 [LinkedIn](https://linkedin.com/in/sorrawit-treesuk-20021a195/)  
+📄 [Research Paper (arXiv)](https://arxiv.org/abs/2503.15204)
+
+---
+
+Made with ❤️ and AI
