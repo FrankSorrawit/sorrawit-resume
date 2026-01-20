@@ -3,7 +3,7 @@
 const Footer = () => {
     return (
         <footer>
-            <p>&copy; {new Date().getFullYear()} Sorrawit Treesuk. Powered by AI.</p>
+            <p>&copy; {new Date().getFullYear()} Sorrawit Treesuk.</p>
         </footer>
     );
 };

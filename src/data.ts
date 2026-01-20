@@ -5,7 +5,7 @@ export const resumeData = {
         title: "AI Developer | GenAI Solution Architect",
         tagline: "Building production-grade Chatbot and GenAI/LLM solutions at enterprise scale. \n\nFrom On-field Engineer to AI Engineer.",
         image: "images/profile.jpg",
-        cvLink: "profile/Sorrawit_Resume_2026.pdf",
+        cvLink: "/Sorrawit_Resume_2026.pdf",
         company: "AXONS (CP Group)",
         period: "2023 – Present",
         location: "Bangkok, Thailand"
