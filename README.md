@@ -5,14 +5,13 @@ A modern, presentation-style resume website with an AI-powered chatbot that answ
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?logo=typescript)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Python-009688?logo=fastapi)
-![Gemini](https://img.shields.io/badge/Gemini_2.5-Google-4285F4?logo=google)
 
 ## ✨ Features
 
 - **🎯 Presentation Layout** - Scroll-based sections optimized for interview presentations
 - **📊 Impact Stats** - Visual cards showing key achievements (3+ years, 10 chatbots, 100M+ THB)
 - **🎠 Project Carousel** - Horizontal navigation through featured projects
-- **🤖 AI Chatbot** - Ask me anything about my experience (powered by Gemini 2.5 Flash)
+- **🤖 AI Chatbot** - Ask me anything about my experience 
 - **🌙 Dark Mode** - Premium dark theme with gradient accents
 - **📱 Responsive** - Works on desktop and mobile
 
@@ -21,7 +20,7 @@ A modern, presentation-style resume website with an AI-powered chatbot that answ
 | Frontend | Backend |
 |----------|---------|
 | React 19 + Vite | FastAPI |
-| TypeScript | Google Gemini AI |
+| TypeScript | AI Agent |
 | Framer Motion | Python |
 | Lucide Icons | uvicorn |
 
@@ -37,7 +36,6 @@ npm run dev
 ```bash
 cd backend
 pip install -r requirements.txt
-# Set GEMINI_API_KEY in .env
 python main.py
 ```
 
