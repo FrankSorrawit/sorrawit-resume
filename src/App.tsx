@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CareerSummary from './components/CareerSummary';
 import CoreCompetencies from './components/CoreCompetencies';
-import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Teaching from './components/Teaching';
